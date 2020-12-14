@@ -29,10 +29,10 @@ public class NPCWalkScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If farther than the minimum distance, move towards the destination.
         if (Vector3.Distance(gameObject.transform.position, currentDestination) >= minDistance)
         {
             atDestination = false;
-            //Walk(currentDestination);
             WalkNM(currentDestination);
             bLock = false;
         }
@@ -40,6 +40,8 @@ public class NPCWalkScript : MonoBehaviour
         {
             atDestination = true;
         }
+        //Prevents the script from looping and resetting the count down timer.
+        //If the randomWait bool is set to true, generates a random time within the corresponding constraints. 
         if(bLock == false && atDestination)
         {
             currentWait = 0;
@@ -49,6 +51,9 @@ public class NPCWalkScript : MonoBehaviour
             }
             bLock = true;
         }
+
+        //Waits for the time its waited to exceed the maxWait set.
+        //Once done waiting, it sets a new destination.
         if (bLock && atDestination)
         {
             if (currentWait < maxWait)
@@ -70,15 +75,17 @@ public class NPCWalkScript : MonoBehaviour
         }
     }
     
-
+    //Tells the player where to face and move.
     private void Walk(Vector3 destination)
     {
         gameObject.transform.LookAt(destination);
         gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, destination, moveSpeed * Time.deltaTime);
     }
+
+    //Walk code but repurposed to work with navmesh
     private void WalkNM(Vector3 destination)
     {
-        nMA.transform.LookAt(destination);
+        //nMA.transform.LookAt(destination);
         nMA.SetDestination(destination);
     }
 }
