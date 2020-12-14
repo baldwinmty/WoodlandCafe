@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class NPCWalkScript : MonoBehaviour
 {
@@ -15,10 +16,13 @@ public class NPCWalkScript : MonoBehaviour
     public bool randomWait = false;
     public float randomWaitMin, randomWaitMax;
 
+    public NavMeshAgent nMA;
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        nMA = gameObject.GetComponent<NavMeshAgent>();
         currentDestination = locations[0].position;
     }
 
@@ -28,7 +32,8 @@ public class NPCWalkScript : MonoBehaviour
         if (Vector3.Distance(gameObject.transform.position, currentDestination) >= minDistance)
         {
             atDestination = false;
-            Walk(currentDestination);
+            //Walk(currentDestination);
+            WalkNM(currentDestination);
             bLock = false;
         }
         else
@@ -52,7 +57,7 @@ public class NPCWalkScript : MonoBehaviour
             }
             else
             {
-                if(nextDestination < locations.Length)
+                if(nextDestination < locations.Length - 1)
                 {
                     nextDestination++;
                 }
@@ -70,5 +75,10 @@ public class NPCWalkScript : MonoBehaviour
     {
         gameObject.transform.LookAt(destination);
         gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, destination, moveSpeed * Time.deltaTime);
+    }
+    private void WalkNM(Vector3 destination)
+    {
+        nMA.transform.LookAt(destination);
+        nMA.SetDestination(destination);
     }
 }
