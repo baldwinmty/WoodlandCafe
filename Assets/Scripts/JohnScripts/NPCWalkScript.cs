@@ -10,6 +10,7 @@ public class NPCWalkScript : MonoBehaviour
     public int nextDestination;
     bool atDestination = true;
     bool bLock = false;
+    bool inMinigame = false;
     public float moveSpeed = 300;
     public float minDistance;
     public float currentWait, maxWait;
@@ -29,48 +30,51 @@ public class NPCWalkScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //If farther than the minimum distance, move towards the destination.
-        if (Vector3.Distance(gameObject.transform.position, currentDestination) >= minDistance)
+        if (!inMinigame)
         {
-            atDestination = false;
-            WalkNM(currentDestination);
-            bLock = false;
-        }
-        else
-        {
-            atDestination = true;
-        }
-        //Prevents the script from looping and resetting the count down timer.
-        //If the randomWait bool is set to true, generates a random time within the corresponding constraints. 
-        if(bLock == false && atDestination)
-        {
-            currentWait = 0;
-            if(randomWait)
+            //If farther than the minimum distance, move towards the destination.
+            if (Vector3.Distance(gameObject.transform.position, currentDestination) >= minDistance)
             {
-                maxWait = Random.Range(randomWaitMin, randomWaitMax);
-            }
-            bLock = true;
-        }
-
-        //Waits for the time its waited to exceed the maxWait set.
-        //Once done waiting, it sets a new destination.
-        if (bLock && atDestination)
-        {
-            if (currentWait < maxWait)
-            {
-                currentWait += Time.deltaTime;
+                atDestination = false;
+                WalkNM(currentDestination);
+                bLock = false;
             }
             else
             {
-                if(nextDestination < locations.Length - 1)
+                atDestination = true;
+            }
+            //Prevents the script from looping and resetting the count down timer.
+            //If the randomWait bool is set to true, generates a random time within the corresponding constraints. 
+            if (bLock == false && atDestination)
+            {
+                currentWait = 0;
+                if (randomWait)
                 {
-                    nextDestination++;
+                    maxWait = Random.Range(randomWaitMin, randomWaitMax);
+                }
+                bLock = true;
+            }
+
+            //Waits for the time its waited to exceed the maxWait set.
+            //Once done waiting, it sets a new destination.
+            if (bLock && atDestination)
+            {
+                if (currentWait < maxWait)
+                {
+                    currentWait += Time.deltaTime;
                 }
                 else
                 {
-                    nextDestination = 0;
+                    if (nextDestination < locations.Length - 1)
+                    {
+                        nextDestination++;
+                    }
+                    else
+                    {
+                        nextDestination = 0;
+                    }
+                    currentDestination = locations[nextDestination].position;
                 }
-                currentDestination = locations[nextDestination].position;
             }
         }
     }
