@@ -9,6 +9,12 @@ public class NPCWalkScript : MonoBehaviour
     private Vector3 currentDestination;
     public int nextDestination;
     bool atDestination = true;
+
+    public Animator animator;
+    private bool IsSitting = false;
+    private bool IsHappy = false;
+    private bool IsSad = false;
+
     bool bLock = false;
     bool inMinigame = false;
     public float moveSpeed = 300;
@@ -23,6 +29,7 @@ public class NPCWalkScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         nMA = gameObject.GetComponent<NavMeshAgent>();
         currentDestination = locations[0].position;
     }
@@ -42,15 +49,26 @@ public class NPCWalkScript : MonoBehaviour
             else
             {
                 atDestination = true;
+                if (!IsSitting)
+                {
+                    animator.SetBool("IsSitting", true);
+                    IsSitting = true;
+                }
             }
             //Prevents the script from looping and resetting the count down timer.
             //If the randomWait bool is set to true, generates a random time within the corresponding constraints. 
             if (bLock == false && atDestination)
             {
+
                 currentWait = 0;
                 if (randomWait)
                 {
                     maxWait = Random.Range(randomWaitMin, randomWaitMax);
+                    if (IsSitting)
+                    {
+                        animator.SetBool("IsSitting", false);
+                        IsSitting = false;
+                    }
                 }
                 bLock = true;
             }
