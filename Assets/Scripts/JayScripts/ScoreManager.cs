@@ -12,6 +12,11 @@ public class ScoreManager : MonoBehaviour
 
     public TextMeshProUGUI[] reactionTallies;
 
+    private void Awake()
+    {
+        endOfDayUI.SetActive(false);
+    }
+
     // Called at the end of a minigame, based on how well the player performed.
     // int reaction is the index to award the point to.
     public void AwardReaction(int reaction)
