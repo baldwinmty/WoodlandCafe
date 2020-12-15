@@ -28,7 +28,7 @@ public class JigsawManager : MonoBehaviour
         allPieces = new GameObject[][] { easyPieces, mediumPieces, hardPieces };
 
         // TESTING ONLY PLEASE REMOVE LATER.
-        //ActivateJigsaw(2);
+        ActivateJigsaw(Random.Range(0, allPieces.Length));
     }
 
     // A method to activate a jigsaw with the specified difficulty (1x2, 2x2, 3x3).
@@ -58,6 +58,9 @@ public class JigsawManager : MonoBehaviour
 
         // If they are all in the right spot, you win!
         Debug.Log("Puzzle complete!");
+        ResetBoard();
+        // TESTING PLEASE REMOVE LATER
+        ActivateJigsaw(Random.Range(0, allPieces.Length));
     }
 
 

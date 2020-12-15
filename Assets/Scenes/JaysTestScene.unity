@@ -1049,10 +1049,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7813042888266692346, guid: 9c4fbed0317e1f741a7f85bb2fe10c21,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7813042889336231846, guid: 9c4fbed0317e1f741a7f85bb2fe10c21,
         type: 3}
       propertyPath: m_Name
       value: JigsawMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813042889336231846, guid: 9c4fbed0317e1f741a7f85bb2fe10c21,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7813042889336231866, guid: 9c4fbed0317e1f741a7f85bb2fe10c21,
         type: 3}
