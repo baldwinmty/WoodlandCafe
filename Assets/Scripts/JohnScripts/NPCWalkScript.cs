@@ -42,6 +42,12 @@ public class NPCWalkScript : MonoBehaviour
             //If farther than the minimum distance, move towards the destination.
             if (Vector3.Distance(gameObject.transform.position, currentDestination) >= minDistance)
             {
+                if (IsSitting)
+                {
+                    animator.SetBool("IsSitting", false);
+                    IsSitting = false;
+                    animator.SetBool("IsStanding", true);
+                }
                 atDestination = false;
                 WalkNM(currentDestination);
                 bLock = false;
@@ -53,6 +59,7 @@ public class NPCWalkScript : MonoBehaviour
                 {
                     animator.SetBool("IsSitting", true);
                     IsSitting = true;
+                    animator.SetBool("IsStanding", false);
                 }
             }
             //Prevents the script from looping and resetting the count down timer.
@@ -64,11 +71,6 @@ public class NPCWalkScript : MonoBehaviour
                 if (randomWait)
                 {
                     maxWait = Random.Range(randomWaitMin, randomWaitMax);
-                    if (IsSitting)
-                    {
-                        animator.SetBool("IsSitting", false);
-                        IsSitting = false;
-                    }
                 }
                 bLock = true;
             }
