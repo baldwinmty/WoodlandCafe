@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d67b75368eb9e914c89abf8f3fc8b77f
+guid: ab92a77b09b611947883b0a01d1a4c61
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -170,6 +170,33 @@ TextureImporter:
   - first:
       213: -1843326959963409023
     second: final_bubble_puzzle_55
+  - first:
+      213: -7290437242799676147
+    second: puzzleDifficulty1_0
+  - first:
+      213: 685503437312442438
+    second: puzzleDifficulty1_1
+  - first:
+      213: 6002997808951370824
+    second: puzzleDifficulty1_2
+  - first:
+      213: -4735421644021831687
+    second: puzzleDifficulty1_3
+  - first:
+      213: -7608497323275821956
+    second: puzzleDifficulty1_4
+  - first:
+      213: 7165188171388046414
+    second: puzzleDifficulty1_5
+  - first:
+      213: -6912378490854076556
+    second: puzzleDifficulty1_6
+  - first:
+      213: 8308021235093040109
+    second: puzzleDifficulty1_7
+  - first:
+      213: -6756743229821370963
+    second: puzzleDifficulty1_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -208,7 +235,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -303,13 +330,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: final_bubble_puzzle_0
+      name: puzzleDifficulty1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
-        width: 256
-        height: 256
+        y: 341.3333
+        width: 170.66667
+        height: 170.66667
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,20 +344,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f8fce298653064f0800000000000000
-      internalID: -837610807433037579
+      spriteID: d05a5ad34f923da90800000000000000
+      internalID: -7290437242799676147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: final_bubble_puzzle_1
+      name: puzzleDifficulty1_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 170
+        y: 341.3333
+        width: 170.66667
+        height: 170.66667
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,20 +365,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: feca3606b7a35b7f0800000000000000
-      internalID: -597507073984189201
+      spriteID: 64041598eb5638900800000000000000
+      internalID: 685503437312442438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: final_bubble_puzzle_2
+      name: puzzleDifficulty1_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 341.3333
+        width: 170.66667
+        height: 170.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844aef5b3beee4350800000000000000
+      internalID: 6002997808951370824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzzleDifficulty1_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 256
-        height: 256
+        y: 171.33333
+        width: 170.66667
+        height: 170.66667
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,20 +407,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40ec7428eb8a0e420800000000000000
-      internalID: 2657309316331589124
+      spriteID: 9f7e166aa17684eb0800000000000000
+      internalID: -4735421644021831687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: final_bubble_puzzle_3
+      name: puzzleDifficulty1_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
+        x: 170
+        y: 171.33333
+        width: 170.66667
+        height: 170.66667
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,8 +428,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ddcbf869699bc820800000000000000
-      internalID: 2939611859801329108
+      spriteID: c7c52abfeff296690800000000000000
+      internalID: -7608497323275821956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzzleDifficulty1_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 171.33333
+        width: 170.66667
+        height: 170.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c4a68ddacdf6360800000000000000
+      internalID: 7165188171388046414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzzleDifficulty1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.3333282
+        width: 170.66667
+        height: 170.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f879bc26c4210a0800000000000000
+      internalID: -6912378490854076556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzzleDifficulty1_7
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1.3333282
+        width: 170.66667
+        height: 170.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb6f18ab450c4370800000000000000
+      internalID: 8308021235093040109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzzleDifficulty1_8
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1.3333282
+        width: 170.66667
+        height: 170.66667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadb8fbc4d93b32a0800000000000000
+      internalID: -6756743229821370963
       vertices: []
       indices: 
       edges: []
