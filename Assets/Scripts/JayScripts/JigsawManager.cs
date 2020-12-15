@@ -7,6 +7,7 @@ public class JigsawManager : MonoBehaviour
     // TODO: this will be a script that chooses the jigsaw difficulty and checks for pieces for the right order.
     // It will include:
     // A reference to the jigsaw UI.
+    // A reference to the currently grabbed piece.
     // A method to activate a jigsaw with the specified difficulty (1x2, 2x2, 3x3).
     // A method called whenever a piece is placed to check for the puzzle being complete.
     // A method to call to the overall MinigameManager (TODO) to signal going to the next minigame.

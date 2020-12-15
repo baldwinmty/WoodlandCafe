@@ -14,6 +14,8 @@ public class DayTimer : MonoBehaviour
     private float remainingTime = 0f;
     private bool executedEndEvents = false;
 
+    [Tooltip("Toggle whether or not to display the time UI to the player.")]
+    public bool useUI = false;
     [Tooltip("Place the UI object you want to display the time here!")]
     public TextMeshProUGUI timeUI;
     [Range(1, 12)] [Tooltip("What time to start the human-readable clock at.")]
@@ -29,6 +31,8 @@ public class DayTimer : MonoBehaviour
     {
         remainingTime = 0f;
         executedEndEvents = false;
+
+        timeUI.gameObject.SetActive(useUI);
     }
 
     void Update()
@@ -42,7 +46,10 @@ public class DayTimer : MonoBehaviour
             // Style the text in the timer UI to appear like an actual clock.
             // Ex: Start at 8 am, timer ticks until the day ends at 8 pm (12 minutes IGT)
             // The visual clock is of course just an illusion of time for the player to understand.
-            TimeUIFormat(remainingTime, startClockTime);
+            if (useUI)
+            {
+                TimeUIFormat(remainingTime, startClockTime);
+            }
         }
         else
         {
