@@ -27,6 +27,6 @@ Material:
     m_Colors:
     - Color_CC4AB0B4: {r: 0.27033636, g: 0.7187617, b: 0.764151, a: 0}
     - Color_FF96B299: {r: 0.2196078, g: 2, b: 1.105882, a: 0}
-    - Vector2_4447FB13: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_4447FB13: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_570580D6: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_D25D0681: {r: 0, g: 0, b: 0, a: 0}
