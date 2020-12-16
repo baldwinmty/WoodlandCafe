@@ -99,37 +99,37 @@ MonoBehaviour:
     randomVolume: 0
     randomPitch: 0.1
   - name: Bear
-    clip: {fileID: 8300000, guid: 103cbfe789d8e7545a07046c7db730fb, type: 3}
+    clip: {fileID: 8300000, guid: 224bd181e0f991f44a1798a93c057c97, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
   - name: Frog
-    clip: {fileID: 8300000, guid: 120962c7990d3c24291f7898f19a3805, type: 3}
+    clip: {fileID: 8300000, guid: f6608d5310c1903468bab05ea78f1b7c, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
   - name: Bird
-    clip: {fileID: 8300000, guid: 5aa4a13b6ef27ec439c6d69f80d7ec33, type: 3}
+    clip: {fileID: 8300000, guid: b4bb166082296b04aa655f8bf625adb5, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
   - name: Rabbit
-    clip: {fileID: 8300000, guid: 4ebdfb05720e4a0429da121ddc0faa09, type: 3}
+    clip: {fileID: 8300000, guid: bc073f5ed5d8280439a83aa4ef57919f, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
   - name: Tiger
-    clip: {fileID: 8300000, guid: b0900792d32acff4aa34dd68fce5671f, type: 3}
+    clip: {fileID: 8300000, guid: b4bfe14b3a3d4394da7c57bbc9c7fa28, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
   - name: Wolf
-    clip: {fileID: 8300000, guid: 8980d0cc2b00d15418813cd7efbd0462, type: 3}
+    clip: {fileID: 8300000, guid: ac76302a14d63804f809ef53219d6e1a, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
