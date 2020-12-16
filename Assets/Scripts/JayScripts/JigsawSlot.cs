@@ -13,6 +13,18 @@ public class JigsawSlot : MonoBehaviour
     private Button button;
     private Image img;
 
+    private AudioManager audioManager;
+    public string puzzlePlace; 
+
+    void Start()
+    {
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.Log("No Audio Manager!!");
+        }
+    }
+
     private void Awake()
     {
         myManager = FindObjectOfType<JigsawManager>();
@@ -29,7 +41,7 @@ public class JigsawSlot : MonoBehaviour
             {
                 myManager.activePiece.LockPiece(slotTransform);
                 PiecePlaced();
-
+                audioManager.PlaySound("puzzlePlace");
                 myManager.CheckCompletion();
             }
             else
