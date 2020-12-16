@@ -52,14 +52,13 @@ public class MinigameTrigger : MonoBehaviour
         switch (reaction)
         {
             case 0:
-                animal.endOfMinigameAnim = "IsSad";
+                animal.TriggerAnim("IsSad");
                 break;
             case 1:
             default:
-                animal.endOfMinigameAnim = "IsSitting";
                 break;
             case 2:
-                animal.endOfMinigameAnim = "IsHappy";
+                animal.TriggerAnim("IsHappy");
                 break;
         }
     }
