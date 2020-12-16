@@ -41,8 +41,8 @@ public class JigsawSlot : MonoBehaviour
             {
                 myManager.activePiece.LockPiece(slotTransform);
                 PiecePlaced();
-                audioManager.PlaySound("puzzlePlace");
                 myManager.CheckCompletion();
+                audioManager.PlaySound("puzzlePlace");
             }
             else
             {

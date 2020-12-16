@@ -77,9 +77,9 @@ public class JigsawManager : MonoBehaviour
 
         // If they are all in the right spot, you win!
         Debug.Log("Puzzle complete!");
-        audioManager.PlaySound("Victory");
         ResetBoard();
         myMiniManager.CloseMinigame(score);
+        audioManager.PlaySound("Victory");
     }
 
     // A method for resetting the jigsaw board.

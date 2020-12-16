@@ -37,6 +37,8 @@ public class CupCatchScript : MonoBehaviour
         snuggie.transform.position = Input.mousePosition;
         cup.transform.localPosition = new Vector3(Random.Range(minXSpawn, maxXSpawn), ySpawn);
         pointCounter = pointCounterMax;
+        startButton.gameObject.SetActive(true);
+        hasWon = false;
     }
 
 
@@ -106,6 +108,6 @@ public class CupCatchScript : MonoBehaviour
         hasStarted = true;
         cup.SetActive(true);
         cup.GetComponent<Rigidbody2D>().isKinematic = false;
-        startButton.enabled = false;
+        startButton.gameObject.SetActive(false);
     }
 }
