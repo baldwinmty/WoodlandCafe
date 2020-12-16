@@ -32932,7 +32932,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539424557}
-  m_LocalRotation: {x: 0.040208932, y: 0.91739565, z: -0.09603176, w: 0.3841177}
+  m_LocalRotation: {x: 0.040208936, y: 0.91739565, z: -0.09603177, w: 0.3841177}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -33170,6 +33170,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Couch
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509649223376199880, guid: 1d1bbb37dc7b7f84188c0b4961405daf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8803812822527939291, guid: 1d1bbb37dc7b7f84188c0b4961405daf,
         type: 3}
