@@ -35,14 +35,21 @@ public class BalanceScript : MonoBehaviour
         timeLeft = minigameTimerLength;
         cup.transform.localPosition = new Vector3(0, ySpawn, 0.8f);
         pointCounter = pointCounterMax;
+        startButton.gameObject.SetActive(true);
+        hasStarted = false;
+
+        if (balanceRB != null)
+        {
+            balanceRB.rotation = Quaternion.Euler(Vector3.zero);
+        }
     }
 
     void Start()
     {
         balanceRB = balanceGO.GetComponent<Rigidbody>();
-        balanceRB.rotation = Quaternion.Euler(Vector3.zero);
-        
+        balanceRB.rotation = Quaternion.Euler(Vector3.zero);    
     }
+
     private void Awake()
     {
         miniMan = FindObjectOfType<MinigameManager>();
