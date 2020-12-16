@@ -56,10 +56,14 @@ public class AudioManager : MonoBehaviour
         for (int i = 0; i < sounds.Length; i++)
         {
             GameObject _go = new GameObject("Sound_" + i + "_" + sounds[i].name);
+            _go.transform.SetParent(this.transform);
             sounds[i].SetSource (_go.AddComponent<AudioSource>());
         }
 
         PlaySound("Loop");
+        PlaySound("Birds");
+        PlaySound("Crickets");
+        PlaySound("Frogs");
     }
 
     public void PlaySound (string _name)
