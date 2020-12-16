@@ -51,7 +51,7 @@ public class MinigameManager : MonoBehaviour
 
         if (scoreManager != null)
         {
-            scoreManager.AwardReaction(point);
+            scoreManager.AwardReaction(Mathf.Clamp(point, 0, 2));
         }
     }
 }

@@ -10,8 +10,8 @@ public class BalanceScript : MonoBehaviour
     public GameObject balanceGO;
     private Rigidbody balanceRB;
 
-    public int pointCounter;
-    public int winReward, missPenalty;
+    public int pointCounter = 3;
+    public int winReward, dropPenalty = 1;
     public Text pointDisplay;
     public Button startButton;
 
@@ -22,36 +22,53 @@ public class BalanceScript : MonoBehaviour
     bool hasStarted = false;
     private bool hasWon = false;
 
+    public float minigameTimerLength = 15f;
+    private float timeLeft;
+
+    MinigameManager miniMan;
+
     // Start is called before the first frame update
     void Start()
     {
         balanceRB = balanceGO.GetComponent<Rigidbody>();
         balanceRB.rotation = Quaternion.Euler(Vector3.zero);
         cup.SetActive(false);
+        timeLeft = minigameTimerLength;
     }
+    private void Awake()
+    {
+        miniMan = FindObjectOfType<MinigameManager>();
+    }
+
 
     // Update is called once per frame
     void Update()
     {
-        if(hasStarted)
+        if (hasStarted)
         {
-            if(Input.GetAxisRaw("Horizontal") != 0)
+            timeLeft -= Time.deltaTime;
+
+            if (Input.GetAxisRaw("Horizontal") != 0)
             {
                 balanceRB.AddTorque(balanceRB.transform.forward * sensitivity * -Input.GetAxis("Horizontal"));
             }
-            if(cup.transform.position.y <= minY)
+            if (cup.transform.localPosition.y <= minY)
             {
                 FailedToCatch();
+            }
+            if (timeLeft <= 0)
+            {
+                miniMan.CloseMinigame(pointCounter);
             }
         }
     }
     void FailedToCatch()
     {
-        pointCounter -= missPenalty;
+        pointCounter -= dropPenalty;
 
         cup.GetComponent<Rigidbody>().velocity = Vector3.zero;
         cup.transform.rotation = Quaternion.Euler(Vector3.zero);
-        cup.transform.position = new Vector3(0, ySpawn, 0.8f);
+        cup.transform.localPosition = new Vector3(0, ySpawn, 0.8f);
     }
     public void ButtonPressed()
     {

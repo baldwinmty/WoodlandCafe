@@ -24,6 +24,8 @@ public class CupCatchScript : MonoBehaviour
 
     public int winReward, missPenalty;
 
+    MinigameManager miniMan;
+
     [HideInInspector]
     public int touchingSides;
     public Rigidbody2D snuggieRB;
@@ -36,6 +38,10 @@ public class CupCatchScript : MonoBehaviour
         snuggie.transform.position = Input.mousePosition;
         snuggieRB = snuggie.GetComponent<Rigidbody2D>();
         cup.GetComponent<Rigidbody2D>().isKinematic = true;
+    }
+    private void Awake()
+    {
+        miniMan = FindObjectOfType<MinigameManager>();
     }
 
     // Update is called once per frame
@@ -68,6 +74,7 @@ public class CupCatchScript : MonoBehaviour
                     Debug.Log("WIN!");
                     pointCounter += winReward;
                     hasWon = true;
+                    miniMan.CloseMinigame(pointCounter);
                 }
             }
             pointDisplay.text = pointCounter.ToString();
@@ -80,7 +87,7 @@ public class CupCatchScript : MonoBehaviour
         
         cup.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         cup.transform.rotation = Quaternion.Euler(Vector3.zero);
-        cup.transform.position = new Vector3(Random.Range(minXSpawn, maxXSpawn), ySpawn);
+        cup.transform.localPosition = new Vector3(Random.Range(minXSpawn, maxXSpawn), ySpawn);
     }
     public void ButtonPressed()
     {
