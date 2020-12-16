@@ -351,6 +351,7 @@ MonoBehaviour:
   - {fileID: 658978756}
   nextDestination: 0
   animator: {fileID: 0}
+  inMinigame: 0
   moveSpeed: 1
   minDistance: 1
   currentWait: 0
@@ -358,6 +359,7 @@ MonoBehaviour:
   randomWait: 1
   randomWaitMin: 1
   randomWaitMax: 3
+  miniGameWon: 0
   nMA: {fileID: 0}
 --- !u!136 &250461857
 CapsuleCollider:
@@ -1118,17 +1120,17 @@ PrefabInstance:
     - target: {fileID: 2454638502197283515, guid: 98b921ddce7ca794d8e0ec5b1650d4c2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.04785
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2454638502197283515, guid: 98b921ddce7ca794d8e0ec5b1650d4c2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2413567
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2454638502197283515, guid: 98b921ddce7ca794d8e0ec5b1650d4c2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.857534
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2454638502197283515, guid: 98b921ddce7ca794d8e0ec5b1650d4c2,
         type: 3}

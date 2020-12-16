@@ -68,7 +68,7 @@ public class CupCatchScript : MonoBehaviour
                 Vector3 mousePos = Input.mousePosition;
                 Ray castPoint = orthoCam.ScreenPointToRay(mousePos);
                 RaycastHit hit;
-                if (Physics.Raycast(castPoint, out hit, Mathf.Infinity))
+                if (Physics.Raycast(castPoint, out hit, Mathf.Infinity, 0, QueryTriggerInteraction.Collide))
                 {
                     snuggie.transform.position = hit.point;
                     //snuggieRB.velocity = ((transform.right * mousePos.x) + (transform.forward * mousePos.y)) / Time.deltaTime;
