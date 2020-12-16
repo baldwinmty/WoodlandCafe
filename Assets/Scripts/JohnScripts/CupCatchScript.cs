@@ -35,7 +35,7 @@ public class CupCatchScript : MonoBehaviour
     {
         cup.SetActive(false);
         snuggie.transform.position = Input.mousePosition;
-        cup.transform.localPosition = new Vector3(Random.Range(minXSpawn, maxXSpawn), ySpawn);
+        cup.transform.localPosition = new Vector3(Random.Range(minXSpawn, maxXSpawn), ySpawn, snuggie.transform.localPosition.z);
         pointCounter = pointCounterMax;
         startButton.gameObject.SetActive(true);
         hasWon = false;
@@ -48,7 +48,7 @@ public class CupCatchScript : MonoBehaviour
         //Saving for later:
         //pointDisplay.text = miniGameManager.score;
         cup.SetActive(false);
-        snuggie.transform.position = Input.mousePosition;
+        snuggie.transform.localPosition = Input.mousePosition;
         snuggieRB = snuggie.GetComponent<Rigidbody2D>();
         cup.GetComponent<Rigidbody2D>().isKinematic = true;
     }
@@ -68,15 +68,16 @@ public class CupCatchScript : MonoBehaviour
                 Vector3 mousePos = Input.mousePosition;
                 Ray castPoint = orthoCam.ScreenPointToRay(mousePos);
                 RaycastHit hit;
-                if (Physics.Raycast(castPoint, out hit, Mathf.Infinity, 0, QueryTriggerInteraction.Collide))
+                if (Physics.Raycast(castPoint, out hit, Mathf.Infinity, ~8, QueryTriggerInteraction.Collide))
                 {
                     snuggie.transform.position = hit.point;
                     //snuggieRB.velocity = ((transform.right * mousePos.x) + (transform.forward * mousePos.y)) / Time.deltaTime;
                     snuggieRB.velocity = (hit.point - snuggie.transform.position) * 10;
                 }
 
-                if (cup.transform.position.y < minYPos)
+                if (cup.transform.localPosition.y < minYPos)
                 {
+                    Debug.Log("Resetting cup");
                     FailedToCatch();
                 }
             }
@@ -100,8 +101,8 @@ public class CupCatchScript : MonoBehaviour
         pointCounter -= missPenalty;
         
         cup.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-        cup.transform.rotation = Quaternion.Euler(Vector3.zero);
-        cup.transform.localPosition = new Vector3(Random.Range(minXSpawn, maxXSpawn), ySpawn);
+        cup.transform.localRotation = Quaternion.Euler(Vector3.zero);
+        cup.transform.localPosition = new Vector3(Random.Range(minXSpawn, maxXSpawn), ySpawn, snuggie.transform.localPosition.z);
     }
     public void ButtonPressed()
     {

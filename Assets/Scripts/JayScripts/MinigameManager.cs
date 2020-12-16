@@ -19,7 +19,7 @@ public class MinigameManager : MonoBehaviour
     {
         scoreManager = FindObjectOfType<ScoreManager>();
 
-        allMinigames = new GameObject[] { CupCatchMinigame, BalanceMinigame, JigsawMinigame };
+        allMinigames = new GameObject[] { /*CupCatchMinigame,*/ BalanceMinigame, JigsawMinigame };
 
         foreach (var minigame in allMinigames)
         {

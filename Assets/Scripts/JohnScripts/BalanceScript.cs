@@ -40,14 +40,14 @@ public class BalanceScript : MonoBehaviour
 
         if (balanceRB != null)
         {
-            balanceRB.rotation = Quaternion.Euler(Vector3.zero);
+            balanceRB.transform.localRotation = Quaternion.Euler(Vector3.zero);
         }
     }
 
     void Start()
     {
         balanceRB = balanceGO.GetComponent<Rigidbody>();
-        balanceRB.rotation = Quaternion.Euler(Vector3.zero);    
+        balanceRB.transform.localRotation = Quaternion.Euler(Vector3.zero);    
     }
 
     private void Awake()
@@ -79,11 +79,15 @@ public class BalanceScript : MonoBehaviour
     }
     void FailedToCatch()
     {
-        pointCounter -= dropPenalty;
+        if (pointCounter > 0)
+            pointCounter -= dropPenalty;
 
+        pointDisplay.text = pointCounter.ToString();
         cup.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        cup.transform.rotation = Quaternion.Euler(Vector3.zero);
+        cup.transform.localRotation = Quaternion.Euler(Vector3.zero);
         cup.transform.localPosition = new Vector3(0, ySpawn, 0.8f);
+        //balanceRB.velocity = Vector3.zero;
+        //balanceRB.transform.localRotation = Quaternion.Euler(Vector3.zero);
     }
     public void ButtonPressed()
     {
