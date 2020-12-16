@@ -18,6 +18,9 @@ public class JigsawManager : MonoBehaviour
     private GameObject[][] allPieces;
 
     private int difficultyThisRound = 0;
+    private int score = 2;
+
+    MinigameManager myMiniManager;
 
     // A reference to the currently grabbed piece.
     [HideInInspector]
@@ -27,14 +30,14 @@ public class JigsawManager : MonoBehaviour
     {
         allPieces = new GameObject[][] { easyPieces, mediumPieces, hardPieces };
 
-        // TESTING ONLY PLEASE REMOVE LATER.
-        ActivateJigsaw(Random.Range(0, allPieces.Length));
+        myMiniManager = FindObjectOfType<MinigameManager>();
     }
 
     // A method to activate a jigsaw with the specified difficulty (1x2, 2x2, 3x3).
     public void ActivateJigsaw(int difficulty)
     {
         difficultyThisRound = difficulty;
+        score = 2;
 
         for (int i = 0; i < puzzleUIS.Length; i++)
         {
@@ -42,6 +45,10 @@ public class JigsawManager : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        ActivateJigsaw(Random.Range(0, 3));
+    }
 
     // A method called whenever a piece is placed to check for the puzzle being complete.
     public void CheckCompletion()
@@ -59,13 +66,8 @@ public class JigsawManager : MonoBehaviour
         // If they are all in the right spot, you win!
         Debug.Log("Puzzle complete!");
         ResetBoard();
-        // TESTING PLEASE REMOVE LATER
-        ActivateJigsaw(Random.Range(0, allPieces.Length));
+        myMiniManager.CloseMinigame(score);
     }
-
-
-    // A method to call to the overall MinigameManager (TODO) to signal going to the next minigame.
-
 
     // A method for resetting the jigsaw board.
     public void ResetBoard()
@@ -80,6 +82,11 @@ public class JigsawManager : MonoBehaviour
         {
             slot.ResetPieces();
         }
+    }
+
+    public void DecrementScore()
+    {
+        score = Mathf.Max(score - 1, 0);
     }
 
     // HOW IT WILL WORK:

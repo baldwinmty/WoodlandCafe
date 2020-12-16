@@ -35,6 +35,7 @@ public class JigsawSlot : MonoBehaviour
             else
             {
                 myManager.activePiece.ResetPosition();
+                myManager.DecrementScore();
             }
         }
     }

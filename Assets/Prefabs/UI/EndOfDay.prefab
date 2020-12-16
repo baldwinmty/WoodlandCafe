@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 2642954724221970931}
   - component: {fileID: 2642954724221970930}
   - component: {fileID: 2642954724221970929}
+  - component: {fileID: 5339580229059042395}
   m_Layer: 5
   m_Name: EndOfDayBackground
   m_TagString: Untagged
@@ -260,6 +261,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5339580229059042395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2642954724221970927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c968e4a426c94468f2b8fa9af3beb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 0}
 --- !u!1 &2642954724374228083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,7 +1187,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2642954725497342205}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5339580229059042395}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2642954725560438268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,7 +1316,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2642954725560438271}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5339580229059042395}
+        m_MethodName: ChangeScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2642954725610399291
 GameObject:
   m_ObjectHideFlags: 0
