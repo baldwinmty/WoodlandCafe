@@ -20,6 +20,7 @@ public class CupCatchScript : MonoBehaviour
     public Camera orthoCam;
 
     public float minXSpawn, maxXSpawn, ySpawn;
+    public float minYPos;
 
     public int winReward, missPenalty;
 
@@ -55,7 +56,7 @@ public class CupCatchScript : MonoBehaviour
                     snuggieRB.velocity = (hit.point - snuggie.transform.position) * 10;
                 }
 
-                if (cup.transform.position.y < -10)
+                if (cup.transform.position.y < minYPos)
                 {
                     FailedToCatch();
                 }
