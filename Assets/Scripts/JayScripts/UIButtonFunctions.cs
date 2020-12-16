@@ -47,6 +47,8 @@ public class UIButtonFunctions : MonoBehaviour
     {
         if (PauseMenu != null)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             PauseMenu.SetActive(true);
             Time.timeScale = 0f;
         }
@@ -56,6 +58,8 @@ public class UIButtonFunctions : MonoBehaviour
     {
         if (PauseMenu != null)
         {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             PauseMenu.SetActive(false);
             Time.timeScale = 1f;
         }

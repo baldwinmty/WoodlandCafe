@@ -59,6 +59,8 @@ public class DayTimer : MonoBehaviour
                 Debug.Log("Time's up!");
                 // This is what executes all of the actions in the OnTimerEnd() Event.
                 OnTimerEnd.Invoke();
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 executedEndEvents = true;
             }
         }

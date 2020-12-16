@@ -52,6 +52,8 @@ public class MinigameTrigger : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 manager.TriggerMinigame(this);
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 audioManager.PlaySound(animalSound);
                 mainObject.GetComponent<NPCWalkScript>().inMinigame = true;
 
@@ -79,6 +81,9 @@ public class MinigameTrigger : MonoBehaviour
                 animal.TriggerAnim("IsHappy");
                 break;
         }
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void OnTriggerEnter(Collider other)

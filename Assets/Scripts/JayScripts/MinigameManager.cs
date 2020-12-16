@@ -35,6 +35,7 @@ public class MinigameManager : MonoBehaviour
             minigameActive = true;
             activeGame = game;
             FindObjectOfType<PlayerController>().enabled = false;
+            FindObjectOfType<PlayerController>().myCamera.gameObject.SetActive(false);
         }
     }
 
@@ -54,5 +55,6 @@ public class MinigameManager : MonoBehaviour
 
         activeGame.FinishedMinigame(Mathf.Clamp(point, 0, 2));
         FindObjectOfType<PlayerController>().enabled = true;
+        FindObjectOfType<PlayerController>().myCamera.gameObject.SetActive(true);
     }
 }
