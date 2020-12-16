@@ -60,10 +60,10 @@ public class AudioManager : MonoBehaviour
             sounds[i].SetSource (_go.AddComponent<AudioSource>());
         }
 
-        PlaySound("Loop");
-        PlaySound("Birds");
-        PlaySound("Crickets");
-        PlaySound("Frogs");
+       // PlaySound("Loop");
+       // PlaySound("Birds");
+       // PlaySound("Crickets");
+       // PlaySound("Frogs");
     }
 
     public void PlaySound (string _name)
