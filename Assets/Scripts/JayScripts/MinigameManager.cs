@@ -13,6 +13,7 @@ public class MinigameManager : MonoBehaviour
     private GameObject[] allMinigames;
 
     private bool minigameActive = false;
+    private MinigameTrigger activeGame;
 
     private void Awake()
     {
@@ -26,12 +27,13 @@ public class MinigameManager : MonoBehaviour
         }
     }
 
-    public void TriggerMinigame()
+    public void TriggerMinigame(MinigameTrigger game)
     {
         if (!minigameActive)
         {
             allMinigames[Random.Range(0, allMinigames.Length)].SetActive(true);
             minigameActive = true;
+            activeGame = game;
         }
     }
 
@@ -48,5 +50,7 @@ public class MinigameManager : MonoBehaviour
         {
             scoreManager.AwardReaction(Mathf.Clamp(point, 0, 2));
         }
+
+        activeGame.FinishedMinigame(Mathf.Clamp(point, 0, 2));
     }
 }

@@ -133,11 +133,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: WolfRig
       objectReference: {fileID: 0}
-    - target: {fileID: 964289398937099993, guid: 1ef4f7729cb0d3e48a157680b37ac725,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4267866265026358474, guid: 1ef4f7729cb0d3e48a157680b37ac725,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -232,11 +227,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RabbitRig
       objectReference: {fileID: 0}
-    - target: {fileID: 1142115546304823720, guid: 6722c17c0974dee4dbbc0bd2334871b6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4144092109284422587, guid: 6722c17c0974dee4dbbc0bd2334871b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -306,11 +296,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TigerRig
       objectReference: {fileID: 0}
-    - target: {fileID: 529491902986986165, guid: f07209c42214a29428ef3fd3776da9da,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1927718283726692572, guid: f07209c42214a29428ef3fd3776da9da,
         type: 3}
       propertyPath: locations.Array.data[0]
@@ -378,63 +363,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f07209c42214a29428ef3fd3776da9da, type: 3}
---- !u!1 &122389154
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 122389156}
-  - component: {fileID: 122389155}
-  - component: {fileID: 122389157}
-  m_Layer: 0
-  m_Name: MinigameTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!135 &122389155
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122389154}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &122389156
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122389154}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.98, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &122389157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122389154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc01b7503997840449d720b6f5a5e05d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &351667260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -446,11 +374,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HummingbirdRig
-      objectReference: {fileID: 0}
-    - target: {fileID: 218876102517937070, guid: 32f6713f8eecdf24696639772460bcfe,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3842348383334408637, guid: 32f6713f8eecdf24696639772460bcfe,
         type: 3}
@@ -530,11 +453,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrogRig
-      objectReference: {fileID: 0}
-    - target: {fileID: 848881716204375039, guid: fd2a60c21bf135f48ae4649ec99e3a7a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4439578040375802348, guid: fd2a60c21bf135f48ae4649ec99e3a7a,
         type: 3}
@@ -1079,11 +997,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BearRig
-      objectReference: {fileID: 0}
-    - target: {fileID: 7685559319446128051, guid: 155c847e9ec7946488dafcac66d869f6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 155c847e9ec7946488dafcac66d869f6, type: 3}
@@ -1834,6 +1747,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AnimalSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5930774822343882459, guid: 047e8b753765e2048a288f6d46e636b4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 047e8b753765e2048a288f6d46e636b4, type: 3}
