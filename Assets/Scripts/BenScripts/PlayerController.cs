@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
     public Transform cam;
     public UIButtonFunctions PauseMenu;
+    public CinemachineFreeLook myCamera;
 
     public float speed;
     public float smoothTime;
