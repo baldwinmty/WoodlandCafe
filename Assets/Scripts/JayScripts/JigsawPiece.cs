@@ -64,8 +64,8 @@ public class JigsawPiece : MonoBehaviour
 
             if (stick)
             {
-                audioManager.PlaySound("puzzlePiece");
                 myManager.activePiece = this;
+                audioManager.PlaySound("puzzlePiece");
             }
             else
             {

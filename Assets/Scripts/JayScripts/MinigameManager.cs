@@ -28,7 +28,7 @@ public class MinigameManager : MonoBehaviour
 
     private void Update()
     {
-        //TriggerMinigame();
+        TriggerMinigame();
     }
 
     public void TriggerMinigame()
