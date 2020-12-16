@@ -53,6 +53,8 @@ public class MinigameTrigger : MonoBehaviour
             {
                 manager.TriggerMinigame(this);
                 audioManager.PlaySound(animalSound);
+                mainObject.GetComponent<NPCWalkScript>().inMinigame = true;
+
             }
         }
     }
@@ -64,6 +66,7 @@ public class MinigameTrigger : MonoBehaviour
 
         NPCWalkScript animal = mainObject.GetComponent<NPCWalkScript>();
         animal.miniGameWon = true;
+        animal.inMinigame = false;
         switch (reaction)
         {
             case 0:

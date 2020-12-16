@@ -16,7 +16,7 @@ public class NPCWalkScript : MonoBehaviour
     private bool IsSad = false;
 
     bool bLock = false;
-    bool inMinigame = false;
+    public bool inMinigame = false;
     public float moveSpeed = 300;
     public float minDistance;
     public float currentWait, maxWait;
