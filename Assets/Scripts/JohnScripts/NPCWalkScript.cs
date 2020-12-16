@@ -23,6 +23,11 @@ public class NPCWalkScript : MonoBehaviour
     public bool randomWait = false;
     public float randomWaitMin, randomWaitMax;
 
+    [HideInInspector]
+    public bool miniGameWon = false;
+    [HideInInspector]
+    public string endOfMinigameAnim;
+
     public NavMeshAgent nMA;
     
 
@@ -37,6 +42,14 @@ public class NPCWalkScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (miniGameWon)
+        {
+            animator.SetBool("IsSitting", false);
+            animator.SetBool("IsStanding", false);
+            animator.SetBool(endOfMinigameAnim, true);
+            return;
+        }
+
         if (!inMinigame)
         {
             //If farther than the minimum distance, move towards the destination.

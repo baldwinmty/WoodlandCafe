@@ -46,6 +46,22 @@ public class MinigameTrigger : MonoBehaviour
     {
         currentEmotion.sprite = emotions[reaction];
         minigameDone = true;
+
+        NPCWalkScript animal = mainObject.GetComponent<NPCWalkScript>();
+        animal.miniGameWon = true;
+        switch (reaction)
+        {
+            case 0:
+                animal.endOfMinigameAnim = "IsSad";
+                break;
+            case 1:
+            default:
+                animal.endOfMinigameAnim = "IsSitting";
+                break;
+            case 2:
+                animal.endOfMinigameAnim = "IsHappy";
+                break;
+        }
     }
 
     private void OnTriggerEnter(Collider other)

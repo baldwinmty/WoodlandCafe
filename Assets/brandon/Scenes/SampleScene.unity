@@ -39695,7 +39695,7 @@ PrefabInstance:
     - target: {fileID: 5745823529070325438, guid: c53f08f71fc529848b96457ffc31deda,
         type: 3}
       propertyPath: OnTimerEnd.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5745823529070325438, guid: c53f08f71fc529848b96457ffc31deda,
         type: 3}
@@ -39725,6 +39725,31 @@ PrefabInstance:
     - target: {fileID: 5745823529070325438, guid: c53f08f71fc529848b96457ffc31deda,
         type: 3}
       propertyPath: OnTimerEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745823529070325438, guid: c53f08f71fc529848b96457ffc31deda,
+        type: 3}
+      propertyPath: OnTimerEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745823529070325438, guid: c53f08f71fc529848b96457ffc31deda,
+        type: 3}
+      propertyPath: OnTimerEnd.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745823529070325438, guid: c53f08f71fc529848b96457ffc31deda,
+        type: 3}
+      propertyPath: OnTimerEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 257932089}
+    - target: {fileID: 5745823529070325438, guid: c53f08f71fc529848b96457ffc31deda,
+        type: 3}
+      propertyPath: OnTimerEnd.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745823529070325438, guid: c53f08f71fc529848b96457ffc31deda,
+        type: 3}
+      propertyPath: OnTimerEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6227938510730490177, guid: c53f08f71fc529848b96457ffc31deda,
