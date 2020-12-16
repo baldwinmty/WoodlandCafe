@@ -1115,11 +1115,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cup Catching Minigame
       objectReference: {fileID: 0}
-    - target: {fileID: 2454638502197283514, guid: 98b921ddce7ca794d8e0ec5b1650d4c2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2454638502197283515, guid: 98b921ddce7ca794d8e0ec5b1650d4c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1184,11 +1179,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5068588269427319280, guid: b15d0ac1916bf244980a39511eb5e57b,
-        type: 3}
-      propertyPath: dropPenalty
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5068588269427319281, guid: b15d0ac1916bf244980a39511eb5e57b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1248,6 +1238,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Balance Minigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5068588269427319282, guid: b15d0ac1916bf244980a39511eb5e57b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b15d0ac1916bf244980a39511eb5e57b, type: 3}
