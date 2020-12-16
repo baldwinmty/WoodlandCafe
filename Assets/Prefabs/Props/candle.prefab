@@ -182,6 +182,31 @@ PrefabInstance:
       propertyPath: prewarm
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6590426427703877213, guid: 6b31f283f84cec44a9f392eb22a8e788,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590426427703877213, guid: 6b31f283f84cec44a9f392eb22a8e788,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key4.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590426427703877213, guid: 6b31f283f84cec44a9f392eb22a8e788,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime3
+      value: 58403
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590426427703877213, guid: 6b31f283f84cec44a9f392eb22a8e788,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime4
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590426427703877213, guid: 6b31f283f84cec44a9f392eb22a8e788,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.m_NumAlphaKeys
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6618235010806944019, guid: 6b31f283f84cec44a9f392eb22a8e788,
         type: 3}
       propertyPath: m_Name
