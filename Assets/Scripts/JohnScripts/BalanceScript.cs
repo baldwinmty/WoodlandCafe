@@ -10,8 +10,8 @@ public class BalanceScript : MonoBehaviour
     public GameObject balanceGO;
     private Rigidbody balanceRB;
 
-    public int pointCounter;
-    public int winReward, missPenalty;
+    public int pointCounter = 3;
+    public int winReward, dropPenalty = 1;
     public Text pointDisplay;
     public Button startButton;
 
@@ -22,6 +22,8 @@ public class BalanceScript : MonoBehaviour
     bool hasStarted = false;
     private bool hasWon = false;
 
+    MinigameManager miniMan;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,11 @@ public class BalanceScript : MonoBehaviour
         balanceRB.rotation = Quaternion.Euler(Vector3.zero);
         cup.SetActive(false);
     }
+    private void Awake()
+    {
+        miniMan = FindObjectOfType<MinigameManager>();
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -39,19 +46,23 @@ public class BalanceScript : MonoBehaviour
             {
                 balanceRB.AddTorque(balanceRB.transform.forward * sensitivity * -Input.GetAxis("Horizontal"));
             }
-            if(cup.transform.position.y <= minY)
+            if(cup.transform.localPosition.y <= minY)
             {
                 FailedToCatch();
             }
+            //Timer thing goes somewhere around here
+            //{
+            //miniMan.CloseMinigame(pointCounter);
+            //}
         }
     }
     void FailedToCatch()
     {
-        pointCounter -= missPenalty;
+        pointCounter -= dropPenalty;
 
         cup.GetComponent<Rigidbody>().velocity = Vector3.zero;
         cup.transform.rotation = Quaternion.Euler(Vector3.zero);
-        cup.transform.position = new Vector3(0, ySpawn, 0.8f);
+        cup.transform.localPosition = new Vector3(0, ySpawn, 0.8f);
     }
     public void ButtonPressed()
     {
