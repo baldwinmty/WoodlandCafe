@@ -22,6 +22,9 @@ public class BalanceScript : MonoBehaviour
     bool hasStarted = false;
     private bool hasWon = false;
 
+    public float minigameTimerLength = 15f;
+    private float timeLeft;
+
     MinigameManager miniMan;
 
     // Start is called before the first frame update
@@ -30,6 +33,7 @@ public class BalanceScript : MonoBehaviour
         balanceRB = balanceGO.GetComponent<Rigidbody>();
         balanceRB.rotation = Quaternion.Euler(Vector3.zero);
         cup.SetActive(false);
+        timeLeft = minigameTimerLength;
     }
     private void Awake()
     {
@@ -40,20 +44,22 @@ public class BalanceScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(hasStarted)
+        if (hasStarted)
         {
-            if(Input.GetAxisRaw("Horizontal") != 0)
+            timeLeft -= Time.deltaTime;
+
+            if (Input.GetAxisRaw("Horizontal") != 0)
             {
                 balanceRB.AddTorque(balanceRB.transform.forward * sensitivity * -Input.GetAxis("Horizontal"));
             }
-            if(cup.transform.localPosition.y <= minY)
+            if (cup.transform.localPosition.y <= minY)
             {
                 FailedToCatch();
             }
-            //Timer thing goes somewhere around here
-            //{
-            //miniMan.CloseMinigame(pointCounter);
-            //}
+            if (timeLeft <= 0)
+            {
+                miniMan.CloseMinigame(pointCounter);
+            }
         }
     }
     void FailedToCatch()
