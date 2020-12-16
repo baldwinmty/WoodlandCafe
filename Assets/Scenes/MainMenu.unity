@@ -3705,7 +3705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Systems Designer/SFX
+  m_text: Systems Designer/SFX/Tech Art
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3774,10 +3774,10 @@ MonoBehaviour:
   m_margin: {x: -0.06565257, y: 0.024584357, z: 0.018360041, w: 0.020878786}
   m_textInfo:
     textComponent: {fileID: 1111760570}
-    characterCount: 20
+    characterCount: 29
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 3
+    spaceCount: 2
+    wordCount: 5
     linkCount: 0
     lineCount: 1
     pageCount: 1
