@@ -15,6 +15,20 @@ public class MinigameTrigger : MonoBehaviour
     public Sprite talk;
     public Sprite[] emotions;
 
+    private AudioManager audioManager;
+
+    // This is edited in the inspector to be specific to each animal.
+    public string animalSound;
+
+    void Start()
+    {
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.Log("No Audio Manager!!");
+        }
+    }
+
     private void Awake()
     {
         manager = FindObjectOfType<MinigameManager>();
@@ -38,6 +52,7 @@ public class MinigameTrigger : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 manager.TriggerMinigame(this);
+                audioManager.PlaySound(animalSound);
             }
         }
     }

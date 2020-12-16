@@ -719,6 +719,7 @@ MonoBehaviour:
   randomWait: 0
   randomWaitMin: 0
   randomWaitMax: 0
+  miniGameWon: 0
   nMA: {fileID: 3034661737579890634}
 --- !u!195 &3034661737579890634
 NavMeshAgent:
@@ -838,3 +839,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ed341d1b6a6d19c4aa11056232bd2c16, type: 3}
   - {fileID: 21300000, guid: df5601b073b484541b948a3fbd4009bb, type: 3}
   - {fileID: 21300000, guid: 7c755cebfd56dc24d89a4034c4b6967f, type: 3}
+  animalSound: Bear
