@@ -1938,7 +1938,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.9576272, y: 1}
+    m_SensorSize: {x: 1.7796053, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -26835,17 +26835,17 @@ PrefabInstance:
     - target: {fileID: 5930774822343882456, guid: 047e8b753765e2048a288f6d46e636b4,
         type: 3}
       propertyPath: minSpawnTime
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5930774822343882456, guid: 047e8b753765e2048a288f6d46e636b4,
         type: 3}
       propertyPath: maxSpawnTime
-      value: 13
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5930774822343882456, guid: 047e8b753765e2048a288f6d46e636b4,
         type: 3}
       propertyPath: maxSpawns
-      value: 6
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5930774822343882457, guid: 047e8b753765e2048a288f6d46e636b4,
         type: 3}
@@ -27658,7 +27658,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.9576272, y: 1}
+    m_SensorSize: {x: 1.7796053, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -31440,7 +31440,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.9576272, y: 1}
+    m_SensorSize: {x: 1.7796053, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -32933,7 +32933,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.9576272, y: 1}
+    m_SensorSize: {x: 1.7796053, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -32949,7 +32949,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539424557}
-  m_LocalRotation: {x: 0.040208932, y: 0.91739565, z: -0.09603176, w: 0.3841177}
+  m_LocalRotation: {x: 0.040208936, y: 0.91739565, z: -0.09603177, w: 0.3841177}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

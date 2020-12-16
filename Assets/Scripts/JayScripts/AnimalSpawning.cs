@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimalSpawning : MonoBehaviour
 {
-    [Range(2, 10)]
+    [Range(2, 20)]
     public int maxSpawns = 8;
 
     [HideInInspector]
