@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TestToon
+  m_Name: Owl
   m_Shader: {fileID: -6465566751694194690, guid: bffae6ceac6dee64a8b35a17524c400b,
     type: 3}
   m_ShaderKeywords: MAIN_LIGHT_CALCULATE_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _SHADOWS_SOFT
@@ -38,7 +38,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_6ACD1499:
-        m_Texture: {fileID: 2800000, guid: ed556746cc9664d488b78f2e51137381, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9472002ff56115949ab88e2e3f750571, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
