@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
     public Transform cam;
+    public UIButtonFunctions PauseMenu;
 
     public float speed;
     public float smoothTime;
@@ -49,6 +50,11 @@ public class PlayerController : MonoBehaviour
             {
                 animator.SetTrigger("Wave");
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseMenu.PauseGame();
         }
     }
 }
