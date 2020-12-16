@@ -78,7 +78,7 @@ Animator:
   m_GameObject: {fileID: 529491902986986165}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: da7577395179b2f439f14286920bf2be, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0b506f02b0ea3d44d8f42f3a3fc7f6aa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -133,11 +133,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextDestination: 0
-  animator: {fileID: 0}
-  moveSpeed: 300
+  animator: {fileID: 5348912987910711279}
+  moveSpeed: 350
   minDistance: 0
   currentWait: 0
-  maxWait: 0
+  maxWait: 10
   randomWait: 0
   randomWaitMin: 0
   randomWaitMax: 0

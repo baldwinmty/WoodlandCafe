@@ -188,6 +188,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8455279644488733929, guid: 1ef4f7729cb0d3e48a157680b37ac725,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1741176382}
+    - target: {fileID: 9097329587186984318, guid: 1ef4f7729cb0d3e48a157680b37ac725,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 32b3bac73a45cf84a8f27584620f1ce9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ef4f7729cb0d3e48a157680b37ac725, type: 3}
 --- !u!1001 &47016688
@@ -257,6 +267,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9005071835770656935, guid: 6722c17c0974dee4dbbc0bd2334871b6,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5b87bf456b35d0144a2936699e876c92, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6722c17c0974dee4dbbc0bd2334871b6, type: 3}
 --- !u!1001 &55302823
@@ -326,6 +341,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5348912987910711279, guid: f07209c42214a29428ef3fd3776da9da,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0b506f02b0ea3d44d8f42f3a3fc7f6aa, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f07209c42214a29428ef3fd3776da9da, type: 3}
 --- !u!1001 &351667260
@@ -340,6 +360,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HummingbirdRig
       objectReference: {fileID: 0}
+    - target: {fileID: 2325289198270122532, guid: 32f6713f8eecdf24696639772460bcfe,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1027209a427623b459c7b91db307c7fb, type: 2}
     - target: {fileID: 3842348383334408637, guid: 32f6713f8eecdf24696639772460bcfe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -426,11 +451,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f81af5f10e12cb043b4bc9451a4f8efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpawns: 8
+  currentSpawns: 0
   minSpawnTime: 1
   maxSpawnTime: 5
   animalPrefabs:
   - {fileID: 1896078954}
   - {fileID: 1356519148}
+  seats: []
 --- !u!4 &613693023
 Transform:
   m_ObjectHideFlags: 0
@@ -452,6 +480,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 253937926183459822, guid: fd2a60c21bf135f48ae4649ec99e3a7a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 86cd0dd8f65c39b45bae8377dcd7d59c, type: 2}
     - target: {fileID: 848881716204375039, guid: fd2a60c21bf135f48ae4649ec99e3a7a,
         type: 3}
       propertyPath: m_Name
@@ -855,6 +888,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f94273d659189cd48a96210b77791270, type: 3}
+--- !u!95 &1741176382 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9005071835770656935, guid: 6722c17c0974dee4dbbc0bd2334871b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 47016688}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1772027640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -862,6 +901,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1840136532431264952, guid: 155c847e9ec7946488dafcac66d869f6,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5febe46885a708d4d8fe0139da12c6a9, type: 2}
     - target: {fileID: 6697924273531615136, guid: 155c847e9ec7946488dafcac66d869f6,
         type: 3}
       propertyPath: m_LocalPosition.x

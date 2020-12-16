@@ -23,7 +23,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c4798721fb9b3a745859876fc6fc1252, type: 2}
+  m_Motion: {fileID: 7400000, guid: 8fb5fd745064920419421227b6f9f0f5, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -75,7 +75,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 53d018ef367261744b61e4982c537c6b, type: 2}
+  m_Motion: {fileID: 7400000, guid: af6c9bfdf2d8bbd4ea1e472fe7f87328, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -109,7 +109,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Frog
+  m_Name: Hummer
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: IsSitting
@@ -170,7 +170,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7415c3097fbfd2048a83157a7a0d970c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 483db389395e04a438f2d062f0e109c6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -300,7 +300,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: eaa29ae1359f2054da271252350ec982, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0c3c20f52446c65438ea792642478f52, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

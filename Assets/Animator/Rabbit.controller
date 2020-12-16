@@ -23,7 +23,8 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c4798721fb9b3a745859876fc6fc1252, type: 2}
+  m_Motion: {fileID: 7855009303317525428, guid: cdc3dfea01ae76640bb46c2bc1b1fe47,
+    type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -75,7 +76,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 53d018ef367261744b61e4982c537c6b, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0623725d3b43ab748ac61335c761199b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -109,7 +110,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Frog
+  m_Name: Rabbit
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: IsSitting
@@ -170,7 +171,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7415c3097fbfd2048a83157a7a0d970c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 78faa8368ed2d77498df7902b0059252, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -300,7 +301,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: eaa29ae1359f2054da271252350ec982, type: 2}
+  m_Motion: {fileID: 7400000, guid: a89a89c01898e524f98a2964352dbe95, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
