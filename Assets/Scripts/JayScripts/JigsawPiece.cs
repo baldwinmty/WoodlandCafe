@@ -3,9 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 [RequireComponent(typeof (RectTransform), typeof(Image), typeof (Button))]
 public class JigsawPiece : MonoBehaviour
 {
+    private AudioManager audioManager;
+    public string puzzlePiece;
+
+    void Start()
+    {
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.Log("No Audio Manager!!");
+        }
+    }
+
     // TODO: this will hold information and logic for this specific piece of the jigsaw.
     // It will include:
     // Variable for it's original position.
@@ -51,6 +64,7 @@ public class JigsawPiece : MonoBehaviour
 
             if (stick)
             {
+                audioManager.PlaySound("puzzlePiece");
                 myManager.activePiece = this;
             }
             else

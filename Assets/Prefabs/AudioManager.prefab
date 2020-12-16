@@ -46,89 +46,89 @@ MonoBehaviour:
   sounds:
   - name: Loop
     clip: {fileID: 8300000, guid: 340abf56a7b4a824884b7d5c84e62896, type: 3}
-    volume: 0.7
+    volume: 0.6
     pitch: 1
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Birds
     clip: {fileID: 8300000, guid: 44f741e1e8d6140469d63f2eb15879e3, type: 3}
-    volume: 0.3
+    volume: 0.2
     pitch: 1
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Crickets
     clip: {fileID: 8300000, guid: e875ce2165925b140a3c418dbb0abba4, type: 3}
-    volume: 0.3
+    volume: 0.2
     pitch: 1
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Frogs
     clip: {fileID: 8300000, guid: e898c132f3781a945bfe570f90a8e2c3, type: 3}
-    volume: 0.3
+    volume: 0.2
     pitch: 1
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Drink
     clip: {fileID: 8300000, guid: 22b90412a54b5f64391c0b0f57472af9, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
-  - name: 
+  - name: puzzlePiece
     clip: {fileID: 8300000, guid: b12483b5754241a4b9cdd0a0e4672cc6, type: 3}
-    volume: 0.7
+    volume: 1
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
-  - name: 
+  - name: puzzlePlace
     clip: {fileID: 8300000, guid: 5c411867a1e97cf4587c8216dcc2f8d9, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
-  - name: 
+  - name: Failure
     clip: {fileID: 8300000, guid: b918fd2fbc8c02843a502d2637ddc5fb, type: 3}
-    volume: 0.7
+    volume: 1
     pitch: 1
     randomVolume: 0.1
     randomPitch: 0.1
-  - name: 
+  - name: Victory
     clip: {fileID: 8300000, guid: 973c5917937be17428789707b3e33527, type: 3}
-    volume: 0.7
+    volume: 1
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
-  - name: 
+  - name: Bear
     clip: {fileID: 8300000, guid: 103cbfe789d8e7545a07046c7db730fb, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
-  - name: 
+  - name: Frog
     clip: {fileID: 8300000, guid: 120962c7990d3c24291f7898f19a3805, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
-  - name: 
+  - name: Bird
     clip: {fileID: 8300000, guid: 5aa4a13b6ef27ec439c6d69f80d7ec33, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
-  - name: 
+  - name: Rabbit
     clip: {fileID: 8300000, guid: 4ebdfb05720e4a0429da121ddc0faa09, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
-  - name: 
+  - name: Tiger
     clip: {fileID: 8300000, guid: b0900792d32acff4aa34dd68fce5671f, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
-  - name: 
+  - name: Wolf
     clip: {fileID: 8300000, guid: 8980d0cc2b00d15418813cd7efbd0462, type: 3}
     volume: 0.7
     pitch: 1
