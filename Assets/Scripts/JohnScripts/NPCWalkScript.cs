@@ -25,8 +25,6 @@ public class NPCWalkScript : MonoBehaviour
 
     [HideInInspector]
     public bool miniGameWon = false;
-    [HideInInspector]
-    public string endOfMinigameAnim;
 
     public NavMeshAgent nMA;
     
@@ -44,9 +42,8 @@ public class NPCWalkScript : MonoBehaviour
     {
         if (miniGameWon)
         {
-            animator.SetBool("IsSitting", false);
             animator.SetBool("IsStanding", false);
-            animator.SetBool(endOfMinigameAnim, true);
+            animator.SetBool("IsSitting", true);
             return;
         }
 
@@ -124,5 +121,10 @@ public class NPCWalkScript : MonoBehaviour
     {
         //nMA.transform.LookAt(destination);
         nMA.SetDestination(destination);
+    }
+
+    public void TriggerAnim(string anim)
+    {
+        animator.SetTrigger(anim);
     }
 }
