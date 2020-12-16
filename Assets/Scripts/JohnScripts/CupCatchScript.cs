@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class CupCatchScript : MonoBehaviour
 {
-    public int pointCounter;
+    public int pointCounter = 3;
+    public int pointCounterMax = 3;
     public Text pointDisplay;
     public Button startButton;
 
@@ -29,6 +30,16 @@ public class CupCatchScript : MonoBehaviour
     [HideInInspector]
     public int touchingSides;
     public Rigidbody2D snuggieRB;
+
+    private void OnEnable()
+    {
+        cup.SetActive(false);
+        snuggie.transform.position = Input.mousePosition;
+        cup.transform.localPosition = new Vector3(Random.Range(minXSpawn, maxXSpawn), ySpawn);
+        pointCounter = pointCounterMax;
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -83,6 +94,7 @@ public class CupCatchScript : MonoBehaviour
     }
     void FailedToCatch()
     {
+        if(pointCounter > 0)
         pointCounter -= missPenalty;
         
         cup.GetComponent<Rigidbody2D>().velocity = Vector3.zero;

@@ -11,6 +11,7 @@ public class BalanceScript : MonoBehaviour
     private Rigidbody balanceRB;
 
     public int pointCounter = 3;
+    public int pointCounterMax = 3;
     public int winReward, dropPenalty = 1;
     public Text pointDisplay;
     public Button startButton;
@@ -28,12 +29,19 @@ public class BalanceScript : MonoBehaviour
     MinigameManager miniMan;
 
     // Start is called before the first frame update
+    private void OnEnable()
+    {
+        cup.SetActive(false);
+        timeLeft = minigameTimerLength;
+        cup.transform.localPosition = new Vector3(0, ySpawn, 0.8f);
+        pointCounter = pointCounterMax;
+    }
+
     void Start()
     {
         balanceRB = balanceGO.GetComponent<Rigidbody>();
         balanceRB.rotation = Quaternion.Euler(Vector3.zero);
-        cup.SetActive(false);
-        timeLeft = minigameTimerLength;
+        
     }
     private void Awake()
     {
@@ -75,5 +83,9 @@ public class BalanceScript : MonoBehaviour
         hasStarted = true;
         startButton.gameObject.SetActive(false);
         cup.SetActive(true);
+    }
+    public void ResetVariables()
+    {
+        cup.SetActive(false);
     }
 }
