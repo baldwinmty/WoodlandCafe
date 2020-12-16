@@ -26,11 +26,6 @@ public class MinigameManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        TriggerMinigame();
-    }
-
     public void TriggerMinigame()
     {
         if (!minigameActive)
