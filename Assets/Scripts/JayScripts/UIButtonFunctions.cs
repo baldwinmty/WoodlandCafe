@@ -6,8 +6,11 @@ public class UIButtonFunctions : MonoBehaviour
 {
     public GameObject Menu;
 
+    public GameObject PauseMenu;
+
     public void ChangeScene(int sceneIndex)
     {
+        Time.timeScale = 1f;
         GameManager.Instance.ChangeScene(sceneIndex);
     }
 
@@ -37,6 +40,24 @@ public class UIButtonFunctions : MonoBehaviour
             {
                 animator.SetBool("Move", false);
             }
+        }
+    }
+
+    public void PauseGame()
+    {
+        if (PauseMenu != null)
+        {
+            PauseMenu.SetActive(true);
+            Time.timeScale = 0f;
+        }
+    }
+
+    public void UnpauseGame()
+    {
+        if (PauseMenu != null)
+        {
+            PauseMenu.SetActive(false);
+            Time.timeScale = 1f;
         }
     }
 }

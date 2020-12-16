@@ -18,6 +18,7 @@ public class MinigameTrigger : MonoBehaviour
     private void Awake()
     {
         manager = FindObjectOfType<MinigameManager>();
+        currentEmotion.sprite = null;
     }
 
     private void Update()

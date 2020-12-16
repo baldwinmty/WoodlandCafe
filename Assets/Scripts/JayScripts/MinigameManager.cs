@@ -34,6 +34,7 @@ public class MinigameManager : MonoBehaviour
             allMinigames[Random.Range(0, allMinigames.Length)].SetActive(true);
             minigameActive = true;
             activeGame = game;
+            FindObjectOfType<PlayerController>().enabled = false;
         }
     }
 
@@ -52,5 +53,6 @@ public class MinigameManager : MonoBehaviour
         }
 
         activeGame.FinishedMinigame(Mathf.Clamp(point, 0, 2));
+        FindObjectOfType<PlayerController>().enabled = true;
     }
 }
