@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5456615836034999778}
   - component: {fileID: 5456615836034999781}
   - component: {fileID: 5456615836034999780}
+  - component: {fileID: 5885193018931517772}
   m_Layer: 5
   m_Name: EndOfDayWithCanvas
   m_TagString: Untagged
@@ -99,6 +100,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5885193018931517772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5456615836034999783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c968e4a426c94468f2b8fa9af3beb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 0}
 --- !u!1001 &2395593901402970809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -366,6 +380,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5339580229059042395, guid: c53f08f71fc529848b96457ffc31deda,
+        type: 3}
+      propertyPath: Menu
+      value: 
+      objectReference: {fileID: 401790842236810070}
     - target: {fileID: 6227938510730490177, guid: c53f08f71fc529848b96457ffc31deda,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -411,6 +430,12 @@ PrefabInstance:
 --- !u!224 &401790842092877517 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2642954724374228084, guid: c53f08f71fc529848b96457ffc31deda,
+    type: 3}
+  m_PrefabInstance: {fileID: 2395593901402970809}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &401790842236810070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2642954724221970927, guid: c53f08f71fc529848b96457ffc31deda,
     type: 3}
   m_PrefabInstance: {fileID: 2395593901402970809}
   m_PrefabAsset: {fileID: 0}
